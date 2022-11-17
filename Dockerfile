@@ -1,6 +1,6 @@
-FROM nadoo/glider
-ENV PORT 8888
-ENV TZ=Asia/Shanghai
+FROM alpine:edge
+COPY glider /app/glider
 COPY glider.conf /app/glider.conf
+RUN chmod +x /app/glider
 WORKDIR /app
 CMD ["./glider", "-config glider.conf"]
