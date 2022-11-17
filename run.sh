@@ -1,1 +1,1 @@
-/app/glider -config glider.conf -verbose
+/app/glider -config /app/glider.conf -verbose
