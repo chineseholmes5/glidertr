@@ -5,4 +5,4 @@ COPY run.sh /app/run.sh
 RUN chmod +x /app/glider && \
     chmod +x /app/run.sh
 WORKDIR /app
-CMD ["run.sh"]
+CMD ["/run.sh"]
