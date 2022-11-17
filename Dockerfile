@@ -1,6 +1,8 @@
 FROM alpine:edge
 COPY glider /app/glider
 COPY glider.conf /app/glider.conf
-RUN chmod +x /app/glider
+COPY run.sh /app/run.sh
+RUN chmod +x /app/glider && \
+    chmod +x /app/run.sh
 WORKDIR /app
-CMD ["glider","-config glider.conf"]
+CMD ["run.sh"]
