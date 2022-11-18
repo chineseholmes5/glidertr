@@ -1,2 +1,2 @@
-/app/gost -c /app/gost.yml &
+/app/gost -C /app/gost.yml &
 /app/glider -config /app/glider.conf -verbose
