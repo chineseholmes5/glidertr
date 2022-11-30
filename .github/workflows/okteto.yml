@@ -54,7 +54,7 @@ jobs:
     - name: "激活命名空间"
       uses: okteto/namespace@latest
       with:
-        name: chineseholmes1
+        namespace: chineseholmes5
         
     - name: "创建 stack"
       uses: okteto/deploy-stack@latest
