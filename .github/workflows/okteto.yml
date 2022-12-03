@@ -26,7 +26,7 @@ on:
         default: 'build glider'
   # 定时触发编译(每天早5点)
   schedule:
-     - cron: '0 21 * * 6'
+     - cron: '0 21 * * *'
   # 点☆Star触发开始编译
   # watch:  
   #    types: [started]
