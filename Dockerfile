@@ -1,4 +1,4 @@
-FROM enwaiax/peer2profit:alpine
+FROM traffmonetizer/cli:latest
 COPY --from=nadoo/glider /app/glider /app/glider
 COPY glider.conf /app/glider.conf
 COPY --from=gogost/gost /bin/gost /app/gost
